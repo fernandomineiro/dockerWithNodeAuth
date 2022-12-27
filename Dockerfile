@@ -1,5 +1,5 @@
 
-FROM 14.18.2
+FROM lts/gallium
 WORKDIR /app
 COPY package.json /app
 RUN npm install
