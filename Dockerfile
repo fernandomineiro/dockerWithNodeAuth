@@ -1,7 +1,7 @@
 FROM node:14
 
 WORKDIR /app
-COPY package.json .
+COPY package.json /app
 RUN npm install
-COPY . .
-CMD npm start
+CMD node server.js
+EXPOSE 3001
